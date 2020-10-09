@@ -7,6 +7,12 @@ class Anagram
   end
 
   def match(val)
-    puts val
+    awnswer =[]
+    val.each do |value|
+      if (value.split('').sort.join == word.split('').sort.join)
+        awnswer << value
+      end
+    end
+    return awnswer
   end
 end

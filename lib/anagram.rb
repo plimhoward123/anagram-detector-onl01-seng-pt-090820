@@ -7,7 +7,6 @@ class Anagram
   end
 
   def match(val)
-  puts  word.split('').sort.join
     tmp = []
     awnser = []
     if val.include?(" ")

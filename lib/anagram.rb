@@ -7,7 +7,7 @@ class Anagram
   end
 
   def match(val)
-    tmp = val.split
+    tmp = val.split(" ")
     tmp.each do |value|
       if (value == word)
         return true

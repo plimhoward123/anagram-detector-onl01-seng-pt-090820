@@ -14,7 +14,7 @@ class Anagram
       tmp = val.split
       tmp.each do |value|
         if (value.split('').sort.join == word.split('').sort.join)
-          value << awnser
+          awnser << value
         end
       end
     else

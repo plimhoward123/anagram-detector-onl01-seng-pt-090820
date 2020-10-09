@@ -8,13 +8,19 @@ class Anagram
 
   def match(val)
     tmp = []
-    tmp = val.split
-    tmp.each do |value|
-      if (value == word)
-        return true
-      else
-        return false
+    awnser = []
+    if val.contains?(" ")
+      tmp = val.split
+      tmp.each do |value|
+        if (value.sort('').join == word.sort('').join)
+          value << awnser
+        end
+      end
+    else
+      if(val.sort('').join == word.sort('').join)
+        awnser << val
       end
     end
+    awnser
   end
 end

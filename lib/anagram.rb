@@ -12,12 +12,12 @@ class Anagram
     if val.include?(" ")
       tmp = val.split
       tmp.each do |value|
-        if (value.split('').join == word.split('').join)
+        if (value.split('').sort.join == word.split('').sort.join)
           value << awnser
         end
       end
     else
-      if(val.split('').join == word.split('').join)
+      if(val.split('').sort.join == word.split('').sort.join)
         awnser << val
       end
     end

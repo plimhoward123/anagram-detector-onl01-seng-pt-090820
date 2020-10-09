@@ -9,7 +9,7 @@ class Anagram
   def match(val)
     tmp = []
     awnser = []
-    if val.contains?(" ")
+    if val.include?(" ")
       tmp = val.split
       tmp.each do |value|
         if (value.sort('').join == word.sort('').join)

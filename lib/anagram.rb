@@ -17,10 +17,6 @@ class Anagram
           awnser << value
         end
       end
-    else
-      if(val.split('').sort.join == word.split('').sort.join)
-        awnser << val
-      end
     end
     awnser
   end

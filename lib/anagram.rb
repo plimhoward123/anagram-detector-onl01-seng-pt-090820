@@ -7,6 +7,13 @@ class Anagram
   end
 
   def match(val)
-
+    val.split
+    val.each do |value|
+      if (value == word)
+        return true
+      else
+        return false
+      end
+    end
   end
 end
